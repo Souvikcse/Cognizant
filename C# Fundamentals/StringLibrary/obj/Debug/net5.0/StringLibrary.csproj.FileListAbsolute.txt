@@ -1,0 +1,12 @@
+/home/souvik/Documents/Cognizant Practice/C# Fundamentals/StringLibrary/bin/Debug/net5.0/StringLibrary.deps.json
+/home/souvik/Documents/Cognizant Practice/C# Fundamentals/StringLibrary/bin/Debug/net5.0/StringLibrary.dll
+/home/souvik/Documents/Cognizant Practice/C# Fundamentals/StringLibrary/bin/Debug/net5.0/ref/StringLibrary.dll
+/home/souvik/Documents/Cognizant Practice/C# Fundamentals/StringLibrary/bin/Debug/net5.0/StringLibrary.pdb
+/home/souvik/Documents/Cognizant Practice/C# Fundamentals/StringLibrary/obj/Debug/net5.0/StringLibrary.csprojAssemblyReference.cache
+/home/souvik/Documents/Cognizant Practice/C# Fundamentals/StringLibrary/obj/Debug/net5.0/StringLibrary.GeneratedMSBuildEditorConfig.editorconfig
+/home/souvik/Documents/Cognizant Practice/C# Fundamentals/StringLibrary/obj/Debug/net5.0/StringLibrary.AssemblyInfoInputs.cache
+/home/souvik/Documents/Cognizant Practice/C# Fundamentals/StringLibrary/obj/Debug/net5.0/StringLibrary.AssemblyInfo.cs
+/home/souvik/Documents/Cognizant Practice/C# Fundamentals/StringLibrary/obj/Debug/net5.0/StringLibrary.csproj.CoreCompileInputs.cache
+/home/souvik/Documents/Cognizant Practice/C# Fundamentals/StringLibrary/obj/Debug/net5.0/StringLibrary.dll
+/home/souvik/Documents/Cognizant Practice/C# Fundamentals/StringLibrary/obj/Debug/net5.0/ref/StringLibrary.dll
+/home/souvik/Documents/Cognizant Practice/C# Fundamentals/StringLibrary/obj/Debug/net5.0/StringLibrary.pdb

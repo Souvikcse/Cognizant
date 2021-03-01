@@ -1,0 +1,17 @@
+﻿@using DemoUploadImage.Models;
+@model IList<Student>
+
+@{
+    ViewBag.Title = "Details";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>Details</h2>
+
+@foreach(var student in Model)
+{
+    <p>@student.sname 
+        <br />
+        <img src="@Url.Content(@student.sphoto)" />
+    </p>
+}

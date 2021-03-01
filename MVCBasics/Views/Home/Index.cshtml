@@ -1,0 +1,38 @@
+﻿@{
+    ViewBag.Title = "Home Page";
+    var c = 1;
+}
+<br />
+<div class="jumbotron">
+    <h1>Menu Items</h1>
+</div>
+
+<div class="container">
+    <table class="table table-striped">
+        <thead class="thead-dark">
+            <tr>
+                <th scope="col">Sl No.</th>
+                <th scope="col">Name</th>
+                <th scope="col">Price</th>
+                <th scope="col">Active</th>
+                <th scope="col">Category</th>
+                <th scope="col">Free Delivery</th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var item in Model)
+            {
+                <tr>
+                    <th scope="row">@c</th>
+                    <td>@item.Name</td>
+                    <td>@item.Price</td>
+                    <td>Yes</td>
+                    <td>@item.Category</td>
+                    <td>Yes</td>
+                    <td>@Html.ActionLink("Add to Cart", "Add", "Cart", new { id = item.Id }, null)</td>
+                </tr>
+                { c++; }
+            }
+        </tbody>
+    </table>
+</div>

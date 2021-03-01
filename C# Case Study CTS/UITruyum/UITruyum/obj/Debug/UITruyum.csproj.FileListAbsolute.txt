@@ -1,0 +1,11 @@
+D:\Downloads\Cognizant Practice\UITruyum\UITruyum\bin\Debug\UITruyum.exe.config
+D:\Downloads\Cognizant Practice\UITruyum\UITruyum\bin\Debug\UITruyum.exe
+D:\Downloads\Cognizant Practice\UITruyum\UITruyum\bin\Debug\UITruyum.pdb
+D:\Downloads\Cognizant Practice\UITruyum\UITruyum\bin\Debug\truyumUtils.dll
+D:\Downloads\Cognizant Practice\UITruyum\UITruyum\bin\Debug\truyumUtils.pdb
+D:\Downloads\Cognizant Practice\UITruyum\UITruyum\bin\Debug\truyumUtils.dll.config
+D:\Downloads\Cognizant Practice\UITruyum\UITruyum\obj\Debug\UITruyum.csprojAssemblyReference.cache
+D:\Downloads\Cognizant Practice\UITruyum\UITruyum\obj\Debug\UITruyum.csproj.CoreCompileInputs.cache
+D:\Downloads\Cognizant Practice\UITruyum\UITruyum\obj\Debug\UITruyum.csproj.CopyComplete
+D:\Downloads\Cognizant Practice\UITruyum\UITruyum\obj\Debug\UITruyum.exe
+D:\Downloads\Cognizant Practice\UITruyum\UITruyum\obj\Debug\UITruyum.pdb

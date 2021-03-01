@@ -1,0 +1,36 @@
+﻿
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+    var c = 1;
+}
+<br />
+<div class="jumbotron">
+    <h1>View Cart</h1>
+</div>
+
+<div class="container">
+    <table class="table table-striped">
+        <thead class="thead-dark">
+            <tr>
+                <th scope="col">Sl No.</th>
+                <th scope="col">Name</th>
+                <th scope="col">Free Delivery</th>
+                <th scope="col">Price</th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var item in Model)
+            {
+            <tr>
+                <th scope="row">@c</th>
+                <td>@item.Name</td>
+                <td>Yes</td>
+                <td>@item.Price</td>
+                <td>@Html.ActionLink("Remove", "Delete", "Cart", new { id = item.Id }, null)</td>
+            </tr>
+                { c++; }
+            }
+        </tbody>
+    </table>
+</div>

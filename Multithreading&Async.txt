@@ -1,0 +1,231 @@
+
+class FileAccess
+    {
+        public void WriteData(string Data)
+        {
+            Console.WriteLine("FileAccess.WriteData - Started");
+            Console.WriteLine("FileAccess.WriteData - Working");
+            for (int Cnt = 0; Cnt < 100; Cnt++)
+            {
+                Console.Write(Data);
+            }
+            Console.WriteLine("FileAccess.WriteData - Ended");
+        }
+    }
+    }
+ 	public static FileAccess Fd = new FileAccess();
+        public static void ChildThread1()
+        {
+            Console.WriteLine("Child thread #1 - Started");
+            Console.WriteLine("Child thread #1 - Calling FileAccess.WriteData ");
+            Fd.WriteData("T1");
+            Console.WriteLine("Child thread #1 - Returned from      Output");
+        }
+        public static void ChildThread2()
+        {
+            Console.WriteLine("Child thread #2 - Started");
+            Console.WriteLine("Child thread #2 - Calling FileAccess.WriteData ");
+            Fd.WriteData("T2");
+            Console.WriteLine("Child thread #2 - Returned from  Output");
+        }
+    }
+	Console.WriteLine("Main Thread Starts");
+            Thread thread1 = new Thread(ThreadLockClass.ChildThread1);
+            Thread thread2 = new Thread(ThreadLockClass.ChildThread2);
+            thread1.Start();
+            thread2.Start();
+            Console.ReadLine();
+
+class SyncClass
+    {
+        private int CountCharacters()
+        {
+            int count = 0;
+            // Create a StreamReader and point it to the file to read
+            using (StreamReader reader = new StreamReader(@"F:\\TextTest.txt"))
+            {
+                string content = reader.ReadToEnd();
+                count = content.Length;
+                // Make the program look busy for 5 seconds
+                Thread.Sleep(5000);
+            }
+            return count;
+        }
+        public void ProcessFIle()
+        {
+            Console.WriteLine("Processing file. Please wait...");
+            int count = CountCharacters();
+            Console.WriteLine(count.ToString() + " characters in file");
+        }
+    }
+}
+ public void MessageDispaly()
+        {
+            for (int i = 0; i < 10; i++)
+            {
+                Console.WriteLine("displaying...");
+                Console.WriteLine(i.ToString() + " Sync");
+            }
+        }
+           // Create a StreamReader and point it to the file to read
+            using (StreamReader reader = new StreamReader(@"F:\\TextTest.txt"))
+            {
+                string content = reader.ReadToEnd();
+                 count = content.Length;
+                // Make the program look busy for 5 seconds
+                Thread.Sleep(5000);
+            }
+            return count;
+        }
+        //return void
+        public async void ProcessFIleAsync()
+            {
+    // Create a task to execute CountCharacters() function
+    // CountCharacters() function returns int, so we created Task<int>
+            Task<int> task = new Task<int>(CountCharacters);//declaration of task
+             task.Start();//starting task
+           Console.WriteLine("Processing file. Please wait...");
+            // Wait until the long running task completes
+            int count = await task;
+    Console.WriteLine(count.ToString() + " characters in file");
+}
+    }
+}
+
+ public async void MessageDispaly()
+        {
+            Task task = new Task(Display);
+            task.Start();
+            // Wait until the long running task completes
+            await task;
+        }
+        public void Display()
+        {
+            for (int i = 0; i < 10; i++)
+            {
+                Console.WriteLine("displaying...");
+                Console.WriteLine(i.ToString() + " Sync");
+            }
+        }
+  public async void MessageDispaly()
+        {
+            Task task = new Task(Display);
+            task.Start();
+            // Wait until the long running task completes
+            await task;
+        }
+         void Display()
+        {
+            for (int i = 0; i < 10; i++)
+            {
+                Console.WriteLine("displaying...");
+                Console.WriteLine(i.ToString() + " Sync");
+                Thread.Sleep(500);
+            }
+        }
+
+
+class Drive
+    {
+        public string Type { get; set; }
+    }
+from annie to everyone:    5:18 PM
+ class Music
+    {
+        public string Name { get; set; }
+    }
+from annie to everyone:    5:19 PM
+class Talk
+    {
+        public string Language { get; set; }
+    }
+from annie to everyone:    5:22 PM
+static Drive StartDrive()
+        {
+            Console.WriteLine("Put Key");
+            return new Drive();
+        }
+        private static Talk StartTalk(string lang)
+        {
+            Console.WriteLine("Starting to talk...");
+            Task.Delay(3000).Wait();
+            Console.WriteLine($"Talking {lang} ");
+            Console.WriteLine("listen ...");
+            Task.Delay(3000).Wait();
+            Console.WriteLine("over");
+            return new Talk();
+        }
+from annie to everyone:    5:23 PM
+private static Music StartMusic(int songs)
+        {
+            Console.WriteLine($"playing {songs} songs in the system");
+            Console.WriteLine("Music of first song...");
+            Task.Delay(3000).Wait();
+            for (int song = 0; song < songs; song++)
+            {
+                Console.WriteLine("Singing");
+            }
+            Console.WriteLine("Playing second song...");
+            Task.Delay(3000).Wait();
+            Console.WriteLine("song");
+            return new Music();
+        }
+from annie to everyone:    5:24 PM
+private static Music StartMusic(int songs)
+        {
+            Console.WriteLine($"playing {songs} songs in the system");
+            Console.WriteLine("Music of first song...");
+            Task.Delay(3000).Wait();
+            for (int song = 0; song < songs; song++)
+            {
+                Console.WriteLine("Singing");
+            }
+            Console.WriteLine("Playing second song...");
+            Task.Delay(3000).Wait();
+            Console.WriteLine("song");
+            return new Music();
+        }
+from annie to everyone:    5:25 PM
+static void SelectMusic(Music music)
+        {
+            Console.WriteLine("select song of Music ...");
+        }
+        static void IncreaseVolume(Music music)
+        {
+            Console.WriteLine("Increase sound of Music ...");
+        }
+
+from annie to everyone:    5:27 PM
+Drive myDrive = StartDrive();
+            Console.WriteLine("Driving Car ");
+            Talk myTalk = StartTalk("English");
+            Console.WriteLine(" Talking ");
+            Music myMusic = StartMusic(2);
+            SelectMusic(myMusic);
+            IncreaseVolume(myMusic);
+            Console.WriteLine("Music playing ");
+            Console.WriteLine("Happy Drive ");
+            Console.ReadLine();
+static Drive StartDrive()
+        {
+            Console.WriteLine("Put Key");
+            return new Drive();
+        }
+from annie to everyone:    5:35 PM
+private static async Task<Talk> StartTalkAsync(string lang)
+        {
+            Console.WriteLine("Starting...");
+            await Task.Delay(3000);
+            Console.WriteLine($"Talking {lang} ");
+            Console.WriteLine("listen ...");
+            await Task.Delay(3000);
+            Console.WriteLine("over");
+            return new Talk();
+        }
+ private static async Task<Music> StartMusicAsync(int songs)
+        {
+            Console.WriteLine($"playing {songs} songs in the system");
+            Console.WriteLine("Music of first song...");
+            await Task.Delay(3000);
+            for (int song = 0; song < songs; song++)
+            {

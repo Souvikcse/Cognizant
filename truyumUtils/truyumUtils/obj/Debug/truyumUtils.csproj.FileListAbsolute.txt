@@ -1,0 +1,7 @@
+D:\Downloads\Cognizant Practice\truyumUtils\truyumUtils\bin\Debug\truyumUtils.dll.config
+D:\Downloads\Cognizant Practice\truyumUtils\truyumUtils\bin\Debug\truyumUtils.dll
+D:\Downloads\Cognizant Practice\truyumUtils\truyumUtils\bin\Debug\truyumUtils.pdb
+D:\Downloads\Cognizant Practice\truyumUtils\truyumUtils\obj\Debug\truyumUtils.csproj.CoreCompileInputs.cache
+D:\Downloads\Cognizant Practice\truyumUtils\truyumUtils\obj\Debug\truyumUtils.dll
+D:\Downloads\Cognizant Practice\truyumUtils\truyumUtils\obj\Debug\truyumUtils.pdb
+D:\Downloads\Cognizant Practice\truyumUtils\truyumUtils\obj\Debug\truyumUtils.csprojAssemblyReference.cache

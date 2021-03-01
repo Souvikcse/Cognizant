@@ -1,0 +1,12 @@
+/home/souvik/Documents/Cognizant Practice/truyumUtility/obj/Debug/net5.0/truyumUtility.csprojAssemblyReference.cache
+/home/souvik/Documents/Cognizant Practice/truyumUtility/obj/Debug/net5.0/truyumUtility.GeneratedMSBuildEditorConfig.editorconfig
+/home/souvik/Documents/Cognizant Practice/truyumUtility/obj/Debug/net5.0/truyumUtility.AssemblyInfoInputs.cache
+/home/souvik/Documents/Cognizant Practice/truyumUtility/obj/Debug/net5.0/truyumUtility.AssemblyInfo.cs
+/home/souvik/Documents/Cognizant Practice/truyumUtility/obj/Debug/net5.0/truyumUtility.csproj.CoreCompileInputs.cache
+/home/souvik/Documents/Cognizant Practice/truyumUtility/bin/Debug/net5.0/truyumUtility.deps.json
+/home/souvik/Documents/Cognizant Practice/truyumUtility/bin/Debug/net5.0/truyumUtility.dll
+/home/souvik/Documents/Cognizant Practice/truyumUtility/bin/Debug/net5.0/ref/truyumUtility.dll
+/home/souvik/Documents/Cognizant Practice/truyumUtility/bin/Debug/net5.0/truyumUtility.pdb
+/home/souvik/Documents/Cognizant Practice/truyumUtility/obj/Debug/net5.0/truyumUtility.dll
+/home/souvik/Documents/Cognizant Practice/truyumUtility/obj/Debug/net5.0/ref/truyumUtility.dll
+/home/souvik/Documents/Cognizant Practice/truyumUtility/obj/Debug/net5.0/truyumUtility.pdb

@@ -1,0 +1,6 @@
+D:\Downloads\Cognizant Practice\MagicFilesLib\bin\Debug\MagicFilesLib.dll
+D:\Downloads\Cognizant Practice\MagicFilesLib\bin\Debug\MagicFilesLib.pdb
+D:\Downloads\Cognizant Practice\MagicFilesLib\obj\Debug\MagicFilesLib.csprojAssemblyReference.cache
+D:\Downloads\Cognizant Practice\MagicFilesLib\obj\Debug\MagicFilesLib.csproj.CoreCompileInputs.cache
+D:\Downloads\Cognizant Practice\MagicFilesLib\obj\Debug\MagicFilesLib.dll
+D:\Downloads\Cognizant Practice\MagicFilesLib\obj\Debug\MagicFilesLib.pdb

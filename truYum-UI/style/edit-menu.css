@@ -1,0 +1,119 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    min-height: 100vh;
+}
+
+/* ----------header items---------------------- */
+header {
+    background-color: rgb(182, 154, 209);
+    padding: 10px 40px;
+    display: flex;
+    justify-content: space-between;
+}
+.logo span{
+    font-family: Xanh-Mono;
+    font-size: 35px;
+    font-weight: 500;
+    color: cornsilk;
+}
+.logo img{
+    height: 45px;
+    width: 80px;
+    margin: auto 20px;
+}
+.list{
+    margin: auto 0;
+}
+.list a{
+    color: cornsilk;
+    font-family: Lato, sans-serif;
+    font-size: 20px;
+    text-decoration: underline;
+}
+
+/* ----------Form Content---------------------- */
+form{
+    margin: 7% 10%;
+}
+form>.title{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 50px;
+    margin-bottom: 25px;
+}
+#itemname{
+    height: 45px;
+    width: 75%;
+    padding: 0 10px;
+    border: none;
+    border-bottom: 2px solid rgb(160, 157, 153);
+    font-size: 22px;
+}
+#itemname:focus{
+    outline: none;
+    border-bottom: 2px solid black;
+    transition: all 0.3s;
+}
+form>table{
+    width: 85%;
+    margin-top: 40px;
+}
+th{
+    text-align: start;
+    font-size: 22px;
+}
+td label{
+    font-size: 19px;
+    cursor: pointer;
+    text-align: center;
+}
+tr *{
+    height: 30px;
+}
+#delivery{
+    margin-top: 50px;
+    align-self: end;
+}
+#delivery+label, .status{
+    font-size: 23px;
+    cursor: pointer;
+}
+input:not(#button){
+    font-size: 22px;
+}
+#button {
+    cursor: pointer;
+    display: block;
+    position: relative;
+    background-color: royalblue;
+    text-decoration: none;
+    width: 120px;
+    padding: 0;
+    margin: 40px 20px;
+    font-weight: 600;
+    font-size: 22px;
+    text-align: center;
+    line-height: 50px;
+    color: #FFF;
+    border-radius: 5px;
+  }
+  #button:hover{
+      background-color: rgb(111, 130, 197);
+      transition: all 0.5s;
+  }
+
+
+/* -----------Footer---------------------------- */
+footer{
+    position: absolute;
+    bottom: 0;
+    font-family: Xanh-Mono;
+    font-size: 30px;
+    padding: 10px 20px;
+    background-color: aqua;
+    width: 100%;
+    height: 60px;
+}

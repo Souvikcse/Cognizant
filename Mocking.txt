@@ -1,0 +1,117 @@
+public class CreditDecision
+    {
+       
+        public string MakeCreditDecision(int creditScore)
+        {
+            //external Resource
+            // component needs to ask a remote web service for a credit decision
+            //technically this code might be testable, but we're having to call into the external 
+            //CreditDecisionService every time we want to test it. 
+            //var service = new CreditDecisionService();
+            //return service.GetCreditDecision(creditScore);
+        }
+    }
+ public interface ICreditDecisionService
+    {
+        string GetCreditDecision(int creditScore);
+    }
+
+ //Refactor or remodify the  unit
+        ICreditDecisionService creditDecisionService;
+        public CreditDecision(ICreditDecisionService creditDecisionService)
+        {
+            this.creditDecisionService = creditDecisionService;
+        }
+        //unit to be tested
+        public string MakeCreditDecision(int creditScore)
+        {
+            return creditDecisionService.GetCreditDecision(creditScore);
+        }
+
+ice type
+        Mock<ICreditDecisionService> mockCreditDecisionService;
+        //create an object to invoke the unit testing method
+        CreditDecision systemUnderTest;
+        //Test method
+        [Test]
+        [TestCase(100, "Declined")]
+        [TestCase(549, "Declined")]
+        [TestCase(550, "Maybe")]
+        [TestCase(674, "Maybe")]
+        [TestCase(675, "We look forward to doing business with you!")]
+        public void MakeCreditDecision_Always_ReturnsExpectedResult(int creditScore, string expectedResult)
+        {
+            mockCreditDecisionService = new Mock<ICreditDecisionService>(MockBehavior.Strict);
+            mockCreditDecisionService.Setup(p => p.GetCreditDecision(creditScore)).Returns(expectedResult);
+            systemUnderTest = new CreditDecision(mockCreditDecisionService.Object);
+            var result = systemUnderTest.MakeCreditDecision(creditScore);
+            Assert.That(result, Is.EqualTo(expectedResult));
+        }
+    
+public class ClassToTest
+    {
+        public string GetPrefixedValue(IMockTarget provider)
+        {
+            return "Prefixed:" + provider.PropertyToMock;
+        }
+    }
+public interface IMockTarget
+    {
+        string PropertyToMock { get; }
+    }
+using NUnit.Framework;
+using Moq;
+using DemoMoq2;
+namespace ProprtyTester
+{[TestFixture]
+    public class TestProperty
+    {
+        [Test]
+        public void TestMocker()
+        {
+            var mock = new Mock<IMockTarget>();
+            mock.SetupGet(x => x.PropertyToMock).Returns("FixedValue");
+            var sut = new ClassToTest();
+           var actual= sut.GetPrefixedValue(mock.Object);
+            Assert.AreEqual("Prefixed:FixedValue", actual);
+        }
+    }
+}
+public interface IAuthor
+    {
+        int Id { get; set; }
+        string FirstName { get; set; }
+        string LastName { get; set; }
+    }
+
+ [TestFixture]
+    public class AuthorTester
+    {
+        [Test]
+        public void TestAuthorMocker()
+        {
+            Mock<IAuthor> author = new Mock<IAuthor>();
+            author.SetupGet(p=>p.FirstName).Returns("Raj");
+            author.SetupGet(p => p.Id).Returns(100);
+            author.SetupGet(p => p.LastName).Returns("Kumar");
+            Assert.AreEqual("Raj", author.Object.FirstName);
+            Assert.AreEqual("Kumar", author.Object.LastName);
+        }
+    }
+ public class Basket
+    {
+        public string CustomerName { get; set; }
+        public float SubTotal { get; set; }
+        public float ShippingPrice { get; set; }
+        public float Total { get; set; }
+        public int ProductId { get; set; }
+    }
+class BasketDal
+    {
+        public Basket GetBasket(int customerId)
+        {
+            // This is where we would connect to DB and return logic
+            // Ignore the DB logic for this example
+            return null;
+        }
+    }

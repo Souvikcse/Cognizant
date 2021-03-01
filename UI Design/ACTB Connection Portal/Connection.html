@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ACTB Connection</title>
+    <style>
+        body{
+            display: grid;
+            place-items: center;
+            background-color: #eed426;
+        }
+        .line > *{
+            margin: 5px 10px;
+        }
+        .line > label{
+            margin-right: 40px;
+        }
+        h1{
+            color: #006666;
+            font-style: Verdana;
+            text-align: center;
+        }
+        #rentalcost{
+            border: 1px solid black;
+            float: right;
+            text-align: center;
+            margin-top: 10px;
+        }
+        td, th{
+            border: 1px solid black;
+        }
+    </style>
+</head>
+<body>
+    <h1 id="heading">ACTB Connection Portal</h1>
+    <form onsubmit="calculate(); return false;">
+        <div class="line">
+            <label for="custname">Customer Name</label>
+            <input type="text" name="custname" id="custname" placeholder="Enter the customer name" required>
+        </div>
+
+        <div class="line">
+            <label for="email">Customer Email</label>
+            <input type="email" name="email" id="email" placeholder="abc@gmail.com" required>
+        </div>
+
+        <div class="line">
+            <label for="mobile">Mobile Number</label>
+            <input type="number" name="mobile" id="mobile" placeholder="Enter the Mobile Number" required>
+        </div>
+
+        <div class="line">
+            <label for="conntype">Type of Broadband</label>
+            <select name="conntype" id="connectiontype" required>
+                <option value="Pre">Pre</option>
+                <option value="Post">Post</option>
+            </select>
+        </div>
+
+        <div class="line">
+        <label for="scheme">Scheme Name</label>
+            <div name="scheme" id="scheme" style="display: inline;">
+                <input type="radio" name="scheme" id="scheme1" value="Local" checked>
+                <span>Local</span>
+
+                <input type="radio" name="scheme" id="scheme2" value="STD">
+                <span>STD</span>
+
+                <input type="radio" name="scheme" id="scheme3" value="FullTalkTime">
+                <span>FullTalkTime</span>
+            </div>
+        </div>
+
+        <div class="line">
+            <label for="duration">Connection Duration</label>
+            <input type="number" name="duration" id="duration" min="1" max="12" required>
+        </div>
+
+        <input type="submit" name="submit" id="submit" value ="Connection Bill Amount" >
+
+        <input type="reset" name="clear" id="clear" value="Reset">
+        <div id="result"></div>
+
+        <table id="rentalcost">
+            <caption>Rental Cost Table</caption>
+            <tr>
+                <th>Connection Type</th>
+                <th>Call Limit</th>
+                <th>Monthly Rental</th>
+            </tr>
+
+            <tr>
+                <td>Pre</td>
+                <td>500</td>
+                <td>75</td>
+            </tr>
+
+            <tr>
+                <td>Post</td>
+                <td>Unlimited</td>
+                <td>150</td>
+            </tr>
+        </table>
+
+    </form>
+
+    <script>
+        function calculate(){
+            var duration = document.getElementById('duration').value;
+            var Scheme = document.querySelector('input[name="scheme"]:checked').value;
+            var rental = document.getElementById('connectiontype').value === "Pre"? 75 : 150;
+            var cost = 200;
+            if (Scheme === "Local")   cost = 200;
+            else if (Scheme === "STD")    cost = 350;
+            else                    cost = 500;
+
+            var total = duration * cost + rental;
+
+            document.getElementById('result').innerHTML = "The Total Monthly Rental Cost is Rs. " + total;
+            return false;
+        }
+    </script>
+</body>
+</html>

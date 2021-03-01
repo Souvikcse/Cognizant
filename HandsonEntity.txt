@@ -1,0 +1,330 @@
+-----------Student Details----------
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+using System.Globalization;
+
+namespace StudentManagement               //DO NOT Change the namespace name
+{
+    public class Program              //DO NOT Change the class name
+    {
+        public static void Main(string[] args)
+        {
+            Console.WriteLine("Enter Student Id");
+            int id = int.Parse(Console.ReadLine());
+            
+            Console.WriteLine("Enter Student Name");
+            string name = Console.ReadLine();
+            
+            Console.WriteLine("Enter Department");
+            string dept = Console.ReadLine();
+            
+            Console.WriteLine("Enter Enrollment Date");
+            string date = Console.ReadLine();
+            
+            Console.WriteLine("Enter PhoneNumber");
+            long phno = long.Parse(Console.ReadLine());
+            
+            Student stu = new Student(){
+                StudentId = id, 
+                StudentName = name,
+                EnrolledDate = DateTime.ParseExact(date, "d-M-yyyy", CultureInfo.InvariantCulture),
+                Department = dept,
+                PhoneNumber = phno
+            };
+            Program p = new Program();
+            p.AddStudent(stu);
+            
+        }
+        
+        public void AddStudent(Student student){       //Do not change the method signature
+            
+            //Add the student details to database. 
+            CollegeContext db = new CollegeContext();
+            db.Students.Add(student);
+            db.SaveChanges();
+            
+            Console.WriteLine("Details Added Successfully         .");
+        }
+    }
+}
+
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace StudentManagement   //DO NOT Change the namespace name
+{
+    public class Student     //DO NOT Change the class name
+    {
+        public int StudentId { get; set; }
+
+        public string StudentName { get; set; }
+        
+        public DateTime EnrolledDate { get; set; }
+        
+        public string Department { get; set; }
+        
+        public long PhoneNumber { get; set; }
+    }
+}
+
+
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+using System.Data.Entity;
+
+namespace StudentManagement      //DO NOT Change the namespace name
+{
+    public class CollegeContext: DbContext      //DO NOT Change the class name
+    {
+        //DO NOT Change the Context name 'StudentConnectionString'
+        public CollegeContext() : base("name=StudentConnectionString"){}
+        
+        //Declare 'Students' Property of type Dbset with neccessary declaration code.
+        public virtual DbSet<Student> Students { get; set; }
+       
+
+    }
+}
+
+
+
+-----------Book Entry------------
+//THIS IS FOR REFERENCE ONLY. YOU ARE NOT REQUIRED TO MAKE ANY CHANGES HERE
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace Exercise1           //DO NOT Change the namespace name 
+{
+   public class Book //DO NOT Change the class name
+    {
+        public int BookId { get; set; }
+        public string BookName { get; set; }
+        public string BookAuthor { get; set; }
+        public string BookGenre { get; set; }
+        public double BookPrice { get; set; }
+
+    }
+}
+
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace Exercise1              //DO NOT change the namespace name
+{
+    public class BookUtil         //DO NOT change the class name 
+    {
+         
+        public Book AddBook(Book book)    //DO NOT change the method Name and Signature
+        {
+            //Implement code to insert the book entity to database
+            var db = new LibraryContext();
+            db.Books.Add(book);
+            db.SaveChanges();
+            
+            return book;
+        }
+
+
+        public List<Book> GetBookByGenre(String Genre)   //DO NOT change the method Name and Signature
+        {
+            //Implement code to get the book entity from database based on Genre
+            var db = new LibraryContext();
+            List<Book> list = db.Books.Where(b => b.BookGenre == Genre).ToList();
+            return list;
+        }
+        public List<Book> GetBooksList() //DO NOT change the method Name and Signature
+        {
+             //Implement code to get the book list from database
+             var db = new LibraryContext();
+             return db.Books.ToList();
+        
+        }
+        public Book UpdateBookPrice(int NewPrice,int Bookid)   //DO NOT change the method Name and Signature
+        {
+             //Implement code to update the book entity 
+             var db = new LibraryContext();
+             var book = db.Books.Find(Bookid);
+             book.BookPrice = NewPrice;
+             db.SaveChanges();
+             
+             return db.Books.Find(Bookid);
+        }
+
+        public Book DeleteBook(int BookId)  //DO NOT change the method Name and Signature
+        {
+            //Implement code to delete the book entity by Id
+            var db = new LibraryContext();
+            var book = db.Books.Find(BookId);
+            db.Books.Remove(book);
+            db.SaveChanges();
+            
+            return book;
+        }
+
+    }
+}
+
+
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+using System.Data.Entity;
+
+namespace Exercise1                      //DO NOT change the namespace name
+{
+    class LibraryContext:DbContext        //DO NOT change the class name
+    {
+
+        //DO NOT change the context name
+        public LibraryContext() : base("name=BookStore")
+        {
+
+
+        }
+        
+        public virtual DbSet<Book> Books  { get; set; }
+       
+        //Implement Books of type DbSet
+                protected override void OnModelCreating(DbModelBuilder modelBuilder)
+        {
+            //Implement code to make 'Book_id' required in entity 'Book' and table name as mentioned in description 
+            modelBuilder.Entity<Book>()
+                        .ToTable("BookDetail");
+                        
+            modelBuilder.Entity<Book>()
+                        .Property(b => b.BookId)
+                        .IsRequired()
+                        .HasColumnName("Book_Id");
+                        
+            
+        }
+    }
+}
+
+
+
+-------Course Repository------------
+
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace Exercise1       //DO NOT Change the namespace name
+{
+    public class Program         //DO NOT Change the class name
+    {
+        static void Main(string[] args)
+        {
+            //Implement code here
+        }
+    }
+}
+
+//THIS CLASS IS FOR REFERENCE. YOU NEED NOT CHANGE
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace Exercise1   //DO NOT Change the namespace name
+{
+  public  class Course   //DO NOT Change the class name
+    {
+        
+        public int CourseId { get; set; }
+        public string CourseName { get; set; }
+        public double CourseFee { get; set; }
+        public int Duration { get; set; }
+        public string InstructorName { get; set; }
+    }
+}
+
+using System;
+using System.Collections.Generic;
+using System.Data.Entity;
+using System.Linq;
+
+namespace Exercise1             //DO NOT Change the namespace name
+{
+   public class CourseRepository      //DO NOT Change the class name
+    {
+        //DO NOT Change the variable or method signature. Add only the required code inside the method.
+        
+        private CourseContext context;
+        
+        public CourseRepository(CourseContext context)
+        {
+            //Implement code here
+            this.context = context;
+        }
+        
+        public IList<Course> GetCourseList()
+        {
+            return this.context.Courses.ToList();
+        }
+
+        public Course GetCourseByID(int courseId)
+        {
+             //Implement code here
+             Course course = this.context.Courses.Find(courseId);
+             return course;
+        }
+
+        public void InsertCourse(Course course)
+        {
+             //Implement code here
+             this.context.Courses.Add(course);
+             this.context.SaveChanges();
+        }
+
+        public Course UpdateCourseFee(int id, double fee)
+        {
+             //Implement code here
+             Course course = this.context.Courses.Find(id);
+             course.CourseFee = fee;
+             this.context.SaveChanges();
+             
+             return this.context.Courses.Find(id);
+        }
+    }
+}
+
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Data.Entity;
+
+namespace Exercise1          //DO NOT Change the namespace name
+{
+  public  class CourseContext:DbContext        //DO NOT Change the class name
+    {
+        //DO NOT Change the Context name 'CourseConnectionString'
+        public CourseContext() : base("name=CourseConnectionString"){}
+        
+        
+        //Declare 'Courses' of type Dbset and add neccessary declaration code.
+        public virtual DbSet<Course> Courses  { get; set; }
+        
+    }
+}

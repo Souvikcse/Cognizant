@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FeedBack</title>
+    <style>
+        body{
+            display: grid;
+            place-items: center;
+        }
+        .btn{
+            margin: 2px;
+            margin-left: 12%;
+        }
+        #result{
+            display: none;
+        }
+    </style>
+</head>
+<body>
+    <h1>Feedback for the ART OF LIVING session</h1>
+    <div id="input">
+        <label>Enter the feedback : </label>
+        <textarea name="feedback" id="feedback" rows="3">
+
+        </textarea>
+    </div>
+    <button class="btn" id="create">Add Feedback</button>
+    <button class="btn" id="view">View Feedback</button>
+
+    <div id="result">
+        
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

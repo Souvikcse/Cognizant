@@ -1,0 +1,6 @@
+D:\Downloads\Cognizant Practice\PlayersManagerLib\obj\Debug\PlayersManagerLib.csprojAssemblyReference.cache
+D:\Downloads\Cognizant Practice\PlayersManagerLib\obj\Debug\PlayersManagerLib.csproj.CoreCompileInputs.cache
+D:\Downloads\Cognizant Practice\PlayersManagerLib\bin\Debug\PlayersManagerLib.dll
+D:\Downloads\Cognizant Practice\PlayersManagerLib\bin\Debug\PlayersManagerLib.pdb
+D:\Downloads\Cognizant Practice\PlayersManagerLib\obj\Debug\PlayersManagerLib.dll
+D:\Downloads\Cognizant Practice\PlayersManagerLib\obj\Debug\PlayersManagerLib.pdb

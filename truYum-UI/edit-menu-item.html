@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Edit Menu</title>
+    <link rel="stylesheet" href="style/edit-menu.css">
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <span>truYum</span>
+            <img src="images/knife-fork.png">
+        </div>
+        <div class="list">
+            <a href="menu-item-list-admin.html">Menu</a>
+        </div>
+    </header>
+
+    <form onsubmit="editItem(); return false;">
+        <div class="title">Edit Menu Item</div>
+        <label for="itemname" style="display: block;">Name</label>
+        <input type="text" name="" id="itemname" pattern="^[a-z A-Z]{2,65}$" value="" required>
+
+        <table>
+            <tr>
+                <th>Price(Rs.)</th>
+                <th>Active</th>
+                <th>Date of Launch</th>
+                <th>Category</th>
+            </tr>
+            <tr>
+                <td><input type="number" name="" id="price" min="1" max="2000" required></td>
+                <td><input type="radio" name="check" id="active1" value="Yes"><label class="status" for="active1" style="margin-right: 20px;">Yes</label><input type="radio" name="check" id="active2" value="No"><label class="status" for="active2">No</label></td>
+                <td><input type="date" name="" id="dateoflaunch" value="2021-01-15"></td>
+                <td><select class="status" id="category" required>
+                    <option value="Starters">Starters</option>
+                    <option value="Main Course">Main Course</option>
+                    <option value="Dessert">Dessert</option>
+                    <option value="Drinks">Drinks</option>
+                </select>
+                </td>
+            </tr>
+        </table>
+
+        <input type="checkbox" name="delivery" id="delivery">
+        <label for="delivery">Free Delivery</label>
+
+        <input type="submit" id="button" value="Save"/>
+    </form>
+
+
+    <footer>Copyright <svg xmlns="http://www.w3.org/2000/svg" enable-background="new 0 0 24 24" height="24" viewBox="0 0 24 24" width="24"><g><rect fill="none" height="19" width="19" x="0"/></g><g><g><g><path d="M11.88,9.14c1.28,0.06,1.61,1.15,1.63,1.66h1.79c-0.08-1.98-1.49-3.19-3.45-3.19C9.64,7.61,8,9,8,12.14 c0,1.94,0.93,4.24,3.84,4.24c2.22,0,3.41-1.65,3.44-2.95h-1.79c-0.03,0.59-0.45,1.38-1.63,1.44C10.55,14.83,10,13.81,10,12.14 C10,9.25,11.28,9.16,11.88,9.14z M12,2C6.48,2,2,6.48,2,12s4.48,10,10,10s10-4.48,10-10S17.52,2,12,2z M12,20c-4.41,0-8-3.59-8-8 s3.59-8,8-8s8,3.59,8,8S16.41,20,12,20z"/></g></g></g></svg> 2019 </footer>
+
+    <script>
+        var items = JSON.parse(localStorage.getItem('items'));
+        var index = Number(localStorage.getItem('toedit'));
+
+        document.getElementById('itemname').value = items[index].name;
+        document.getElementById('price').value = items[index].price;
+        if (items[index].active){
+            document.getElementById('active1').setAttribute('checked', 'true');
+        }
+        else{
+            document.getElementById('active2').setAttribute('checked', 'true');
+        }
+        document.getElementById('dateoflaunch').value = items[index].dof;
+
+        function editItem(){
+            console.log("Hello");
+            items[index].name = document.getElementById('itemname').value;
+            items[index].price = document.getElementById('price').value;
+            if (document.getElementById('active1').getAttribute('checked')=='true'){
+                items[index].active = true;
+            }
+            else{
+                items[index].active = false;
+            }
+            items[index].dof = document.getElementById('dateoflaunch').value;
+            items[index].type = document.getElementById('category').value;
+            if (document.getElementById('delivery').checked)
+                items[index].freedel = true;
+            else
+                items[index].freedel = false;
+            
+            localStorage.setItem('items', JSON.stringify(items));
+            location.href = "edit-menu-item-status.html";
+        };
+    </script>
+</body>
+</html>

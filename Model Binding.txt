@@ -1,0 +1,80 @@
+--------------Course Description---------------
+
+@using ASP_App1.Models;
+@model Course
+
+Course Details
+@Html.LabelFor(m => m.CourseId, "Course ID:")
+@Html.TextBoxFor(m => m.CourseId)
+
+@Html.LabelFor(m => m.CourseName, "Course Name:")
+@Html.TextBoxFor(m => m.CourseName)
+
+@Html.LabelFor(m => m.Duration, "Course Duration:")
+@Html.TextBoxFor(m => m.Duration)
+
+@Html.LabelFor(m => m.Level, "Course Level:")
+@Html.TextBoxFor(m => m.Level)
+
+
+
+------------CourseList--------------------
+
+@model Department
+
+<h2>Available Courses</h2>
+
+@foreach(var str in Model.CourseList){
+    <h6>str</h6>
+}
+
+
+----------------Ex3Controller------------
+
+using ASP_App1.Models;
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Web;
+using System.Web.Mvc;
+
+namespace ASP_App1.Controllers       //DO NOT change the namespace name
+{
+    public class Ex3Controller : Controller         //DO NOT change the class name
+    {
+        Course crsJava = new Course(){
+                CourseName = "Java",
+                CourseId = "C101",
+                Duration = 40,
+                Level = "Beginner"
+            };
+        Department list = new Department(){
+            CourseList = new List<string>(){
+                "Java", "DotNet", "Python", "Ruby"  
+            }
+        };
+        // Implement 'Index' action    
+        public ActionResult Index(){
+            return RedirectToAction("CourseDescription", crsJava);
+        }
+        // Implement 'IndexChoice' action
+        public ActionResult IndexChoice(int id){
+            if (id==1){
+                return RedirectToAction("CourseDescription", crsJava);
+            }
+            else {
+                return RedirectToAction("CourseList", list);
+            }
+        }
+        // Implement 'CourseDescription' action
+        public ActionResult CourseDescription(Course crsModel){
+            return View(crsModel);
+        }
+        
+        // Implement 'CourseList' action
+        public ActionResult CourseList(Department deptList){
+            return View(deptList);
+        }
+        
+    }
+}

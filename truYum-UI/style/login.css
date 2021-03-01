@@ -1,0 +1,96 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital@0;1&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    background-color: rgba(54, 233, 164, 0.884);
+    display: grid;
+    place-items: center;
+    height: 100vh;
+    width: 100vw;
+}
+.container {
+    /* border: 2px solid black; */
+    background-color: white;
+    margin: auto auto;
+    height: 60vh;
+    width: 30vw;
+    border-radius: 10px;
+    box-shadow: 20px 20px 16px rgb(224, 221, 221);
+}
+#logo {
+    height: 20vh;
+    width: 13vw;
+    border-radius: 50%;
+    margin: 0 auto;
+}
+#logo img{
+    height: 100%;
+    width: 100%;
+}
+.input{
+    /* border: 2px solid black; */
+    margin: 10px 0;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+svg{
+    margin: 10px;
+}
+.input input{
+    border: 2px solid rgb(163, 162, 162);
+    height: 90%;
+    width: 70%;
+    border-radius: 19px;
+    padding: 10px;
+    font-size: 20px;
+}
+input:focus{
+    outline: none;
+}
+.access {
+    width: 100%;
+    height: 80px;
+    padding: 5px 0px;
+    margin: 20px auto;
+    display: flex;
+    justify-content: center;
+}
+.access>div{
+    margin: 1px 50px;
+}
+.access input{
+    display: inline;
+}
+.access>div *:hover{
+    cursor: pointer;
+}
+.access label{
+    font-family: Lato, Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    font-size: 20px;
+}
+a#button {
+    display: block;
+    position: relative;
+    background-color: royalblue;
+    text-decoration: none;
+    width: 120px;
+    padding: 0;
+    margin: 10px auto;
+    font-weight: 600;
+    font-size: 22px;
+    text-align: center;
+    line-height: 50px;
+    color: #FFF;
+    border-radius: 5px;
+  }
+  a#button:hover{
+      background-color: rgb(111, 130, 197);
+      transition: all 0.5s;
+  }

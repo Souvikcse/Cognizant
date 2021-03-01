@@ -1,0 +1,38 @@
+﻿@using MVCBasics.Models;
+@model List<MenuItem>
+@{ 
+    var c = 1;
+}
+
+<div class="jumbotron">
+    <h1>Menu Items</h1>
+    <h4>@Html.ActionLink("Create New", "Create", "Home")</h4>
+</div>
+
+<table class="table table-striped">
+    <thead class="thead-dark">
+        <tr>
+            <th scope="col">Sl No.</th>
+            <th scope="col">Name</th>
+            <th scope="col">Price</th>
+            <th scope="col">Date of Launch</th>
+            <th scope="col">Category</th>
+            <th scope="col">Free Delivery</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach(var item in Model)
+        {
+        <tr>
+            <th scope="row">@c</th>
+            <td>@item.Name</td>
+            <td>@item.Price</td>
+            <td>@item.DateOfLaunch.ToString("dd/MM/yyyy")</td>
+            <td>@item.Category</td>
+            <td>Yes</td>
+            <td>@Html.ActionLink("Edit", "Edit", "Home", new { id = item.Id }, null)</td>
+        </tr>
+            { c++; }
+        }
+    </tbody>
+</table>

@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+        <title>Calculator</title>
+    </head>
+    <style>
+        body{
+            display: grid;
+            place-items: center;
+        }
+        *:not(body){
+            margin: 2px;
+        }
+        .input{
+            width: 80%;
+            display: flex;
+            justify-content: space-between;
+        }
+    </style>
+    <body>
+        <font color="blue" size="20">Calculator</font>
+        <figure src="calculator.jpeg" style="height: 300px; width: 400px;" ></figure>
+        <div class="input">
+            <label for="input1">Input1</label>
+            <input type="number" name="input1" id="input1" />
+        </div>
+        <div class="input">
+            <label for="input2">Input2</label>
+            <input type="number" name="input2" id="input2"/>
+        </div>
+        <div class="input">
+            <label for="operation">Select Operation</label>
+            <select name="operation" id="operation" >
+                <option value="ADD">ADD</option>
+                <option value="SUBTRACT">SUBTRACT</option>
+                <option value="MULTIPLY">MULTIPLY</option>
+                <option value="DIVIDE">DIVIDE</option>
+            </select>
+        </div>
+        <div class="input">
+            <img src="calc.jpeg" style="height: 80px; width: 80px;" />
+            <img src="reset.jpeg" style="height: 80px; width: 80px;" />
+        </div>
+    </body>
+</html>

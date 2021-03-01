@@ -1,0 +1,15 @@
+D:\Downloads\Cognizant Practice\EntityIntro\bin\Debug\EntityIntro.exe.config
+D:\Downloads\Cognizant Practice\EntityIntro\bin\Debug\EntityIntro.exe
+D:\Downloads\Cognizant Practice\EntityIntro\bin\Debug\EntityIntro.pdb
+D:\Downloads\Cognizant Practice\EntityIntro\bin\Debug\EntityFramework.dll
+D:\Downloads\Cognizant Practice\EntityIntro\bin\Debug\EntityFramework.SqlServer.dll
+D:\Downloads\Cognizant Practice\EntityIntro\bin\Debug\System.ComponentModel.Annotations.dll
+D:\Downloads\Cognizant Practice\EntityIntro\bin\Debug\EntityFramework.xml
+D:\Downloads\Cognizant Practice\EntityIntro\bin\Debug\EntityFramework.SqlServer.xml
+D:\Downloads\Cognizant Practice\EntityIntro\obj\Debug\EntityIntro.csprojAssemblyReference.cache
+D:\Downloads\Cognizant Practice\EntityIntro\obj\Debug\EntityIntro.csproj.CoreCompileInputs.cache
+D:\Downloads\Cognizant Practice\EntityIntro\obj\Debug\EntityIntro.csproj.CopyComplete
+D:\Downloads\Cognizant Practice\EntityIntro\obj\Debug\EntityIntro.exe
+D:\Downloads\Cognizant Practice\EntityIntro\obj\Debug\EntityIntro.pdb
+D:\Downloads\Cognizant Practice\EntityIntro\obj\Debug\EntityIntro.Migrations.CreateTableEmployees.resources
+D:\Downloads\Cognizant Practice\EntityIntro\obj\Debug\EntityIntro.csproj.GenerateResource.cache
