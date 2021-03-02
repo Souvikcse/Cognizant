@@ -1,0 +1,10 @@
+D:\Downloads\Cognizant Practice\MyNewService\bin\Debug\MyNewService.exe.config
+D:\Downloads\Cognizant Practice\MyNewService\bin\Debug\MyNewService.exe
+D:\Downloads\Cognizant Practice\MyNewService\bin\Debug\MyNewService.pdb
+D:\Downloads\Cognizant Practice\MyNewService\obj\Debug\MyNewService.csprojAssemblyReference.cache
+D:\Downloads\Cognizant Practice\MyNewService\obj\Debug\MyNewService.MyNewService.resources
+D:\Downloads\Cognizant Practice\MyNewService\obj\Debug\MyNewService.ProjectInstaller.resources
+D:\Downloads\Cognizant Practice\MyNewService\obj\Debug\MyNewService.csproj.GenerateResource.cache
+D:\Downloads\Cognizant Practice\MyNewService\obj\Debug\MyNewService.csproj.CoreCompileInputs.cache
+D:\Downloads\Cognizant Practice\MyNewService\obj\Debug\MyNewService.exe
+D:\Downloads\Cognizant Practice\MyNewService\obj\Debug\MyNewService.pdb

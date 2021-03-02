@@ -1,7 +1,7 @@
 ﻿
-namespace WindowsService1
+namespace MyNewService
 {
-    partial class Service1
+    partial class MyNewService
     {
         /// <summary> 
         /// Required designer variable.
@@ -29,8 +29,11 @@ namespace WindowsService1
         /// </summary>
         private void InitializeComponent()
         {
-            components = new System.ComponentModel.Container();
-            this.ServiceName = "Service1";
+            // 
+            // MyNewService
+            // 
+            this.ServiceName = "MyNewService";
+
         }
 
         #endregion
