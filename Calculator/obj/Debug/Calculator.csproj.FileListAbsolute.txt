@@ -1,0 +1,10 @@
+D:\Downloads\Cognizant Practice\Calculator\bin\Debug\Calculator.exe.config
+D:\Downloads\Cognizant Practice\Calculator\bin\Debug\Calculator.exe
+D:\Downloads\Cognizant Practice\Calculator\bin\Debug\Calculator.pdb
+D:\Downloads\Cognizant Practice\Calculator\obj\Debug\Calculator.csprojAssemblyReference.cache
+D:\Downloads\Cognizant Practice\Calculator\obj\Debug\Calculator.Form1.resources
+D:\Downloads\Cognizant Practice\Calculator\obj\Debug\Calculator.Properties.Resources.resources
+D:\Downloads\Cognizant Practice\Calculator\obj\Debug\Calculator.csproj.GenerateResource.cache
+D:\Downloads\Cognizant Practice\Calculator\obj\Debug\Calculator.csproj.CoreCompileInputs.cache
+D:\Downloads\Cognizant Practice\Calculator\obj\Debug\Calculator.exe
+D:\Downloads\Cognizant Practice\Calculator\obj\Debug\Calculator.pdb

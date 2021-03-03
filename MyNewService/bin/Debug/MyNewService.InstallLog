@@ -163,3 +163,11 @@ Affected parameters are:
    logtoconsole = 
    logfile = D:\Downloads\Cognizant Practice\MyNewService\bin\Debug\MyNewService.InstallLog
    assemblypath = D:\Downloads\Cognizant Practice\MyNewService\bin\Debug\MyNewService.exe
+Uninstalling assembly 'D:\Downloads\Cognizant Practice\MyNewService\bin\Debug\MyNewService.exe'.
+Affected parameters are:
+   logtoconsole = 
+   logfile = D:\Downloads\Cognizant Practice\MyNewService\bin\Debug\MyNewService.InstallLog
+   assemblypath = D:\Downloads\Cognizant Practice\MyNewService\bin\Debug\MyNewService.exe
+Removing EventLog source MyNewService.
+Service MyNewService is being removed from the system...
+Service MyNewService was successfully removed from the system.

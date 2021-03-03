@@ -212,3 +212,10 @@ The file is located at D:\Downloads\Cognizant Practice\MyNewService\bin\Debug\My
 The Commit phase completed successfully.
 
 The transacted install has completed.
+
+
+The uninstall is beginning.
+See the contents of the log file for the D:\Downloads\Cognizant Practice\MyNewService\bin\Debug\MyNewService.exe assembly's progress.
+The file is located at D:\Downloads\Cognizant Practice\MyNewService\bin\Debug\MyNewService.InstallLog.
+
+The uninstall has completed.
