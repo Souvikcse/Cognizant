@@ -15,9 +15,11 @@ namespace MyNewService
     public partial class MyNewService : ServiceBase
     {
         Timer timer = new Timer();
+        DateTime configuredTime;
         public MyNewService()
         {
             InitializeComponent();
+            configuredTime = DateTime.Now.AddSeconds(12);
         }
 
         protected override void OnStart(string[] args)
@@ -34,7 +36,10 @@ namespace MyNewService
         }
         private void OnElapsedTime(object source, ElapsedEventArgs e)
         {
-            FileWrite("Service is called again at " + DateTime.Now);
+            if (DateTime.Now > configuredTime)
+            {
+                FileWrite("Service is called again at " + DateTime.Now);
+            }
         }
         public void FileWrite(string Message)
         {

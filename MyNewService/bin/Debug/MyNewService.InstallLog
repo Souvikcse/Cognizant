@@ -1,0 +1,66 @@
+﻿Installing assembly 'D:\Downloads\Cognizant Practice\MyNewService\bin\Debug\MyNewService.exe'.
+Affected parameters are:
+   logtoconsole = 
+   logfile = D:\Downloads\Cognizant Practice\MyNewService\bin\Debug\MyNewService.InstallLog
+   assemblypath = D:\Downloads\Cognizant Practice\MyNewService\bin\Debug\MyNewService.exe
+Rolling back assembly 'D:\Downloads\Cognizant Practice\MyNewService\bin\Debug\MyNewService.exe'.
+Affected parameters are:
+   logtoconsole = 
+   logfile = D:\Downloads\Cognizant Practice\MyNewService\bin\Debug\MyNewService.InstallLog
+   assemblypath = D:\Downloads\Cognizant Practice\MyNewService\bin\Debug\MyNewService.exe
+Installing assembly 'D:\Downloads\Cognizant Practice\MyNewService\bin\Debug\MyNewService.exe'.
+Affected parameters are:
+   logtoconsole = 
+   logfile = D:\Downloads\Cognizant Practice\MyNewService\bin\Debug\MyNewService.InstallLog
+   assemblypath = D:\Downloads\Cognizant Practice\MyNewService\bin\Debug\MyNewService.exe
+Rolling back assembly 'D:\Downloads\Cognizant Practice\MyNewService\bin\Debug\MyNewService.exe'.
+Affected parameters are:
+   logtoconsole = 
+   logfile = D:\Downloads\Cognizant Practice\MyNewService\bin\Debug\MyNewService.InstallLog
+   assemblypath = D:\Downloads\Cognizant Practice\MyNewService\bin\Debug\MyNewService.exe
+Installing assembly 'D:\Downloads\Cognizant Practice\MyNewService\bin\Debug\MyNewService.exe'.
+Affected parameters are:
+   logtoconsole = 
+   logfile = D:\Downloads\Cognizant Practice\MyNewService\bin\Debug\MyNewService.InstallLog
+   assemblypath = D:\Downloads\Cognizant Practice\MyNewService\bin\Debug\MyNewService.exe
+Rolling back assembly 'D:\Downloads\Cognizant Practice\MyNewService\bin\Debug\MyNewService.exe'.
+Affected parameters are:
+   logtoconsole = 
+   logfile = D:\Downloads\Cognizant Practice\MyNewService\bin\Debug\MyNewService.InstallLog
+   assemblypath = D:\Downloads\Cognizant Practice\MyNewService\bin\Debug\MyNewService.exe
+Installing assembly 'D:\Downloads\Cognizant Practice\MyNewService\bin\Debug\MyNewService.exe'.
+Affected parameters are:
+   logtoconsole = 
+   logfile = D:\Downloads\Cognizant Practice\MyNewService\bin\Debug\MyNewService.InstallLog
+   assemblypath = D:\Downloads\Cognizant Practice\MyNewService\bin\Debug\MyNewService.exe
+Rolling back assembly 'D:\Downloads\Cognizant Practice\MyNewService\bin\Debug\MyNewService.exe'.
+Affected parameters are:
+   logtoconsole = 
+   logfile = D:\Downloads\Cognizant Practice\MyNewService\bin\Debug\MyNewService.InstallLog
+   assemblypath = D:\Downloads\Cognizant Practice\MyNewService\bin\Debug\MyNewService.exe
+Installing assembly 'D:\Downloads\Cognizant Practice\MyNewService\bin\Debug\MyNewService.exe'.
+Affected parameters are:
+   logtoconsole = 
+   logfile = D:\Downloads\Cognizant Practice\MyNewService\bin\Debug\MyNewService.InstallLog
+   assemblypath = D:\Downloads\Cognizant Practice\MyNewService\bin\Debug\MyNewService.exe
+Installing service MyNewService...
+Service MyNewService has been successfully installed.
+Creating EventLog source MyNewService in log Application...
+Committing assembly 'D:\Downloads\Cognizant Practice\MyNewService\bin\Debug\MyNewService.exe'.
+Affected parameters are:
+   logtoconsole = 
+   logfile = D:\Downloads\Cognizant Practice\MyNewService\bin\Debug\MyNewService.InstallLog
+   assemblypath = D:\Downloads\Cognizant Practice\MyNewService\bin\Debug\MyNewService.exe
+Installing assembly 'D:\Downloads\Cognizant Practice\MyNewService\bin\Debug\MyNewService.exe'.
+Affected parameters are:
+   logtoconsole = 
+   logfile = D:\Downloads\Cognizant Practice\MyNewService\bin\Debug\MyNewService.InstallLog
+   assemblypath = D:\Downloads\Cognizant Practice\MyNewService\bin\Debug\MyNewService.exe
+Installing service MyNewService...
+Creating EventLog source MyNewService in log Application...
+Rolling back assembly 'D:\Downloads\Cognizant Practice\MyNewService\bin\Debug\MyNewService.exe'.
+Affected parameters are:
+   logtoconsole = 
+   logfile = D:\Downloads\Cognizant Practice\MyNewService\bin\Debug\MyNewService.InstallLog
+   assemblypath = D:\Downloads\Cognizant Practice\MyNewService\bin\Debug\MyNewService.exe
+Restoring event log to previous state for source MyNewService.

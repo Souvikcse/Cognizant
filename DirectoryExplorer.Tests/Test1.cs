@@ -14,6 +14,7 @@ namespace DirectoryExplorer.Tests
     {
         private readonly string _file1 = "file.txt";
         private readonly string _file2 = "file2.txt";
+        private readonly string _file3 = "file3.txt";
         Mock<IDirectoryExplorer> _directorExplorer;
 
         [OneTimeSetUp]
@@ -41,7 +42,7 @@ namespace DirectoryExplorer.Tests
 
             Assert.IsNotNull(files);
             Assert.IsTrue(files.Count == 2);
-            Assert.IsTrue(files.Contains(_file1));
+            Assert.IsTrue(files.Contains(_file2));
 
         }
     }
