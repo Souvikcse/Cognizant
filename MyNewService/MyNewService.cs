@@ -26,7 +26,7 @@ namespace MyNewService
         {
             FileWrite("Service started at " + DateTime.Now);
             timer.Elapsed += new ElapsedEventHandler(OnElapsedTime);
-            timer.Interval = 10000; //number in milisecinds  
+            timer.Interval = 10000; //number in milliseconds  
             timer.Enabled = true;
         }
 
@@ -43,12 +43,13 @@ namespace MyNewService
         }
         public void FileWrite(string Message)
         {
-            string path = AppDomain.CurrentDomain.BaseDirectory + "\\Logs";
+            //string path = AppDomain.CurrentDomain.BaseDirectory + "\\Logs";
+            string path = "D:\\Downloads\\Cognizant Practice\\Logs";
             if (!Directory.Exists(path))
             {
                 Directory.CreateDirectory(path);
             }
-            string filepath = AppDomain.CurrentDomain.BaseDirectory + "\\Logs\\ServiceLog_" + DateTime.Now.Date.ToString().Replace('/', '-') + ".txt";
+            string filepath = path + "\\ServiceLog_" + DateTime.Now.ToString().Replace('/', '-') + ".txt";
             if (!File.Exists(filepath))
             {
                 // Create a file to write to.   

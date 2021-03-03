@@ -16,7 +16,7 @@ namespace MyNewService
         {
             InitializeComponent();
 
-            this.serviceProcessInstaller1.Account = ServiceAccount.LocalSystem;
+            this.serviceProcessInstaller1.Account = ServiceAccount.LocalService;
             this.serviceProcessInstaller1.Username = @".\MyUserName";
             this.serviceProcessInstaller1.Password = "123456";
         }

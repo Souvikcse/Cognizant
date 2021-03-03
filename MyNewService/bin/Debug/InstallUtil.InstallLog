@@ -97,3 +97,118 @@ The file is located at D:\Downloads\Cognizant Practice\MyNewService\bin\Debug\My
 The Rollback phase completed successfully.
 
 The transacted install has completed.
+
+Running a transacted installation.
+
+Beginning the Install phase of the installation.
+See the contents of the log file for the D:\Downloads\Cognizant Practice\MyNewService\bin\Debug\MyNewService.exe assembly's progress.
+The file is located at D:\Downloads\Cognizant Practice\MyNewService\bin\Debug\MyNewService.InstallLog.
+
+An exception occurred during the Install phase.
+System.InvalidOperationException: Cannot open Service Control Manager on computer '.'. This operation might require other privileges.
+The inner exception System.ComponentModel.Win32Exception was thrown with the following error message: Access is denied.
+
+The Rollback phase of the installation is beginning.
+See the contents of the log file for the D:\Downloads\Cognizant Practice\MyNewService\bin\Debug\MyNewService.exe assembly's progress.
+The file is located at D:\Downloads\Cognizant Practice\MyNewService\bin\Debug\MyNewService.InstallLog.
+
+The Rollback phase completed successfully.
+
+The transacted install has completed.
+
+Running a transacted installation.
+
+Beginning the Install phase of the installation.
+See the contents of the log file for the D:\Downloads\Cognizant Practice\MyNewService\bin\Debug\MyNewService.exe assembly's progress.
+The file is located at D:\Downloads\Cognizant Practice\MyNewService\bin\Debug\MyNewService.InstallLog.
+
+An exception occurred during the Install phase.
+System.ComponentModel.Win32Exception: The specified service already exists
+
+The Rollback phase of the installation is beginning.
+See the contents of the log file for the D:\Downloads\Cognizant Practice\MyNewService\bin\Debug\MyNewService.exe assembly's progress.
+The file is located at D:\Downloads\Cognizant Practice\MyNewService\bin\Debug\MyNewService.InstallLog.
+
+The Rollback phase completed successfully.
+
+The transacted install has completed.
+
+
+The uninstall is beginning.
+See the contents of the log file for the D:\Downloads\Cognizant Practice\MyNewService\bin\Debug\MyNewService.exe assembly's progress.
+The file is located at D:\Downloads\Cognizant Practice\MyNewService\bin\Debug\MyNewService.InstallLog.
+
+The uninstall has completed.
+
+Running a transacted installation.
+
+Beginning the Install phase of the installation.
+See the contents of the log file for the D:\Downloads\Cognizant Practice\MyNewService\bin\Debug\MyNewService.exe assembly's progress.
+The file is located at D:\Downloads\Cognizant Practice\MyNewService\bin\Debug\MyNewService.InstallLog.
+
+The Install phase completed successfully, and the Commit phase is beginning.
+See the contents of the log file for the D:\Downloads\Cognizant Practice\MyNewService\bin\Debug\MyNewService.exe assembly's progress.
+The file is located at D:\Downloads\Cognizant Practice\MyNewService\bin\Debug\MyNewService.InstallLog.
+
+The Commit phase completed successfully.
+
+The transacted install has completed.
+
+
+The uninstall is beginning.
+See the contents of the log file for the D:\Downloads\Cognizant Practice\MyNewService\bin\Debug\MyNewService.exe assembly's progress.
+The file is located at D:\Downloads\Cognizant Practice\MyNewService\bin\Debug\MyNewService.InstallLog.
+
+The uninstall has completed.
+
+Running a transacted installation.
+
+Beginning the Install phase of the installation.
+See the contents of the log file for the D:\Downloads\Cognizant Practice\MyNewService\bin\Debug\MyNewService.exe assembly's progress.
+The file is located at D:\Downloads\Cognizant Practice\MyNewService\bin\Debug\MyNewService.InstallLog.
+
+An exception occurred during the Install phase.
+System.ComponentModel.Win32Exception: No mapping between account names and security IDs was done
+
+The Rollback phase of the installation is beginning.
+See the contents of the log file for the D:\Downloads\Cognizant Practice\MyNewService\bin\Debug\MyNewService.exe assembly's progress.
+The file is located at D:\Downloads\Cognizant Practice\MyNewService\bin\Debug\MyNewService.InstallLog.
+
+The Rollback phase completed successfully.
+
+The transacted install has completed.
+
+Running a transacted installation.
+
+Beginning the Install phase of the installation.
+See the contents of the log file for the D:\Downloads\Cognizant Practice\MyNewService\bin\Debug\MyNewService.exe assembly's progress.
+The file is located at D:\Downloads\Cognizant Practice\MyNewService\bin\Debug\MyNewService.InstallLog.
+
+The Install phase completed successfully, and the Commit phase is beginning.
+See the contents of the log file for the D:\Downloads\Cognizant Practice\MyNewService\bin\Debug\MyNewService.exe assembly's progress.
+The file is located at D:\Downloads\Cognizant Practice\MyNewService\bin\Debug\MyNewService.InstallLog.
+
+The Commit phase completed successfully.
+
+The transacted install has completed.
+
+
+The uninstall is beginning.
+See the contents of the log file for the D:\Downloads\Cognizant Practice\MyNewService\bin\Debug\MyNewService.exe assembly's progress.
+The file is located at D:\Downloads\Cognizant Practice\MyNewService\bin\Debug\MyNewService.InstallLog.
+
+The uninstall has completed.
+
+Running a transacted installation.
+
+Beginning the Install phase of the installation.
+See the contents of the log file for the D:\Downloads\Cognizant Practice\MyNewService\bin\Debug\MyNewService.exe assembly's progress.
+The file is located at D:\Downloads\Cognizant Practice\MyNewService\bin\Debug\MyNewService.InstallLog.
+
+The Install phase completed successfully, and the Commit phase is beginning.
+See the contents of the log file for the D:\Downloads\Cognizant Practice\MyNewService\bin\Debug\MyNewService.exe assembly's progress.
+The file is located at D:\Downloads\Cognizant Practice\MyNewService\bin\Debug\MyNewService.InstallLog.
+
+The Commit phase completed successfully.
+
+The transacted install has completed.
