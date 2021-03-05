@@ -32,7 +32,7 @@ namespace Calculator
             }
             catch (Exception)
             {
-                MessageBox.Show("-> type two numbers");
+                MessageBox.Show("Type two valid numbers");
             }
             
 
