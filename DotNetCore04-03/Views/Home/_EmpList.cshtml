@@ -1,0 +1,23 @@
+﻿<div class="row">
+    @foreach (var item in Model)
+    {
+        @if (item.IsPermanent)
+        {
+            <div class="col-md-3">
+                <ul>
+                    <li><b>@item.Name</b></li>
+                    <li><b>@item.Salary</b></li>
+                </ul>
+            </div>
+        }
+        else
+        {
+            <div class="col-md-3">
+                <ul>
+                    <li>@item.Name</li>
+                    <li>@item.Salary</li>
+                </ul>
+            </div>
+        }
+    }
+</div>

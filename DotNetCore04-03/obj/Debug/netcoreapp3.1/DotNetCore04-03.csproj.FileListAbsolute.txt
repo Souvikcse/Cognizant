@@ -36,3 +36,5 @@ D:\Downloads\Cognizant Practice\DotNetCore04-03\obj\Debug\netcoreapp3.1\DotNetCo
 D:\Downloads\Cognizant Practice\DotNetCore04-03\obj\Debug\netcoreapp3.1\DotNetCore04-03.pdb
 D:\Downloads\Cognizant Practice\DotNetCore04-03\obj\Debug\netcoreapp3.1\DotNetCore04-03.genruntimeconfig.cache
 D:\Downloads\Cognizant Practice\DotNetCore04-03\obj\Debug\netcoreapp3.1\DotNetCore04-03.csproj.CopyComplete
+D:\Downloads\Cognizant Practice\DotNetCore04-03\obj\Debug\netcoreapp3.1\Razor\Views\Home\EmployeeList.cshtml.g.cs
+D:\Downloads\Cognizant Practice\DotNetCore04-03\obj\Debug\netcoreapp3.1\Razor\Views\Home\_EmpList.cshtml.g.cs

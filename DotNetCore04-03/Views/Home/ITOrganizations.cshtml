@@ -17,11 +17,11 @@
 <div>
     @if (item.StartsWith("Amazon"))
     {
-        <b>@item.Split('-')[0]</b> <span>@item.Split('-')[1]</span>
+        <b>@item.Split('-')[0]</b> <span><a href="@item.Split('-')[1]">@item.Split('-')[1]</a></span>
     }
     else
     {
-        <i>@item.Split('-')[0]</i> <span>@item.Split('-')[1]</span>
+        <i>@item.Split('-')[0]</i> <span><a href="@item.Split('-')[1]">@item.Split('-')[1]</a></span>
     }
 </div>
 }
