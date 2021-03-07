@@ -1,0 +1,27 @@
+﻿@*
+    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+*@
+@{
+    List<string> Organizations = new List<string>()
+    {
+        "Microsoft-www.microsoft.com", "Google-www.google.com", "TCS-www.tcs.com", "Amazon-www.amazon.in", "CTS-www.cognizant.com"
+    };
+}
+
+<h2>
+    IT Organizations in India
+</h2>
+
+@foreach (var item in Organizations)
+{
+<div>
+    @if (item.StartsWith("Amazon"))
+    {
+        <b>@item.Split('-')[0]</b> <span>@item.Split('-')[1]</span>
+    }
+    else
+    {
+        <i>@item.Split('-')[0]</i> <span>@item.Split('-')[1]</span>
+    }
+</div>
+}
