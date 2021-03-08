@@ -1,0 +1,7 @@
+C:\Users\admin\Desktop\Handson\Case Study\Generic Medicine\GenericMedicine\GenericMedicine\bin\Debug\GenericMedicine.exe.config
+C:\Users\admin\Desktop\Handson\Case Study\Generic Medicine\GenericMedicine\GenericMedicine\bin\Debug\GenericMedicine.exe
+C:\Users\admin\Desktop\Handson\Case Study\Generic Medicine\GenericMedicine\GenericMedicine\bin\Debug\GenericMedicine.pdb
+C:\Users\admin\Desktop\Handson\Case Study\Generic Medicine\GenericMedicine\GenericMedicine\obj\Debug\GenericMedicine.csprojAssemblyReference.cache
+C:\Users\admin\Desktop\Handson\Case Study\Generic Medicine\GenericMedicine\GenericMedicine\obj\Debug\GenericMedicine.csproj.CoreCompileInputs.cache
+C:\Users\admin\Desktop\Handson\Case Study\Generic Medicine\GenericMedicine\GenericMedicine\obj\Debug\GenericMedicine.exe
+C:\Users\admin\Desktop\Handson\Case Study\Generic Medicine\GenericMedicine\GenericMedicine\obj\Debug\GenericMedicine.pdb
