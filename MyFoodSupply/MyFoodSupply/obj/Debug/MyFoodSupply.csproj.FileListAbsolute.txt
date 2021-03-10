@@ -1,0 +1,7 @@
+D:\Downloads\MyFoodSupply\MyFoodSupply\obj\Debug\MyFoodSupply.csprojAssemblyReference.cache
+D:\Downloads\MyFoodSupply\MyFoodSupply\obj\Debug\MyFoodSupply.csproj.CoreCompileInputs.cache
+D:\Downloads\MyFoodSupply\MyFoodSupply\bin\Debug\MyFoodSupply.exe.config
+D:\Downloads\MyFoodSupply\MyFoodSupply\bin\Debug\MyFoodSupply.exe
+D:\Downloads\MyFoodSupply\MyFoodSupply\bin\Debug\MyFoodSupply.pdb
+D:\Downloads\MyFoodSupply\MyFoodSupply\obj\Debug\MyFoodSupply.exe
+D:\Downloads\MyFoodSupply\MyFoodSupply\obj\Debug\MyFoodSupply.pdb
