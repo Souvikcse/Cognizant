@@ -1,2 +1,2 @@
-2021-03-05 22:26:20,249 INFO mylog - Home Page request
-2021-03-05 22:26:20,265 ERROR mylog - This is an error message
+2021-03-12 11:53:01,006 INFO mylog - Home Page request
+2021-03-12 11:53:01,071 ERROR mylog - This is an error message

@@ -41,5 +41,11 @@ namespace MyFoodSupply.Tests
             Assert.Throws<Exception>(() => prog.CreateSupplyDetail(foodItemCount, requestDate, sellerName, packingCharge, item));
         }
 
+        [Test]
+        [TestCase(3, "2020-03-04", "ddx", 10.2)]
+        public void SupplyDetail_FoodDetailNull_Test(int foodItemCount, DateTime requestDate, string sellerName, double packingCharge)
+        {
+            Assert.AreEqual(prog.CreateSupplyDetail(foodItemCount, requestDate, sellerName, packingCharge, null), null);
+        }
     }
 }

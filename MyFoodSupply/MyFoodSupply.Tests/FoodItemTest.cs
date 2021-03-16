@@ -40,7 +40,7 @@ namespace MyFoodSupply.Tests
         }
 
         [Test]
-        [TestCase("ggf", 1, "2012-05-09", 9.5)]
+        [TestCase("ggf", 1, "2023-05-09", 9.5)]
         public void FoodItem_Expirydate_Test(string name, int dishType, DateTime expiryDate, double price)
         {
             Assert.Throws<Exception>(() => prog.CreateFoodDetail(name, dishType, expiryDate, price));

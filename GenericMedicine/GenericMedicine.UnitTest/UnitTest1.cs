@@ -16,34 +16,34 @@ namespace GenericMedicine.UnitTest
         }
 
         [Test]
-        [TestCase("abc", "cdf", "fdb", 7.8)]
-        public void MedicineObjectCreationTest(string name, string medName, string comp, double p)
+        [TestCase("abc", "cdf", "fdb", "2022-05-05", 7.8)]
+        public void MedicineObjectCreationTest(string name, string medName, string comp, DateTime date, double p)
         {
             //var result = ;
             
 
-            Assert.DoesNotThrow(() => prog.CreateMedicineDetail(name, medName, comp, DateTime.Now.AddDays(10), p));
+            Assert.DoesNotThrow(() => prog.CreateMedicineDetail(name, medName, comp, date, p));
         }
 
         [Test]
-        [TestCase("abc", "cdf", "fdb", 7.8)]
-        public void TestMedicineName(string name, string medName, string comp, double p)
+        [TestCase("abc", "", "fdb", "2022-05-05", 7.8)]
+        public void TestMedicineName(string name, string medName, string comp, DateTime date, double p)
         {
-            Assert.That(() => prog.CreateMedicineDetail(name, null, comp, DateTime.Now.AddDays(10), p), Throws.Exception);
+            Assert.That(() => prog.CreateMedicineDetail(name, medName, comp, date, p), Throws.Exception);
         }
 
         [Test]
-        [TestCase("abc", "cdf", "fdb", 7.8)]
-        public void TestPriceValue(string name, string medName, string comp, double p)
+        [TestCase("abc", "cdf", "fdb", "2022-05-05", 0)]
+        public void TestPriceValue(string name, string medName, string comp, DateTime date, double p)
         {
-            Assert.That(() => prog.CreateMedicineDetail(name, medName, comp, DateTime.Now.AddDays(10), 0), Throws.Exception);
+            Assert.That(() => prog.CreateMedicineDetail(name, medName, comp, date, p), Throws.Exception);
         }
 
         [Test]
-        [TestCase("abc", "cdf", "fdb", 7.8)]
-        public void TestExpiryDate(string name, string medName, string comp, double p)
+        [TestCase("abc", "cdf", "fdb", "2012-05-05", 7.8)]
+        public void TestExpiryDate(string name, string medName, string comp, DateTime date, double p)
         {
-            Assert.That(() => prog.CreateMedicineDetail(name, medName, comp, DateTime.Now.AddDays(-10), p), Throws.Exception);
+            Assert.That(() => prog.CreateMedicineDetail(name, medName, comp, date, p), Throws.Exception);
         }
     }
 }

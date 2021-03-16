@@ -45,10 +45,11 @@ namespace GenericMedicine.UnitTest
         }
 
         [Test]
-        [TestCase(10, "2022-1-20", "fdb")]
-        public void TestNullMedicineObject(int c, DateTime date, string addr)
+        [TestCase(10, "2022-1-20", "fdb", null)]
+        public void TestNullMedicineObject(int c, DateTime date, string addr, Medicine med)
         {
-            Assert.AreEqual(prog.CreateCartonDetail(c, date, addr, null), null);
+            med = medicine;
+            Assert.AreEqual(prog.CreateCartonDetail(c, date, addr, med), null);
         }
     }
 }
