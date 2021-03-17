@@ -12,7 +12,7 @@ namespace AbstractFactoryDemo
         {
             string type = "Mercedes";
 
-            var factory = FactoryGetter(type);
+            var factory = GetFactory(type);
 
             var headlight = factory.makeHeadlight();
             Console.WriteLine(headlight.GetHeadlight());
